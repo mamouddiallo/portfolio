@@ -21,12 +21,15 @@ div.cover {
 	position: relative;
 }
 img.cover_profile {
-	height: 100px;
+	height: 150px;
+	width: 150px; /* Ajoutez également une largeur pour garantir un carré */
+	object-fit: cover; /* Ajout de cette propriété pour gérer le format de l'image */
 	position: relative;
 	left: 50%;
-	margin-left: -50px;
+	margin-left: -75px; /* La moitié de la hauteur pour centrer horizontalement */
 	margin-top: 50px;
-}
+	border-radius: 50%;
+  }
 h1 {
 	text-align: center;
 	color: white;
