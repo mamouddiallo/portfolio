@@ -5,20 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mamoudou Diallo</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
 	<a href="{% url 'home' %}"></a>
 	<!-- COUVERTURE -->
 	<div class="cover">
-		<img class="cover_profile" src="./RESOURCES/mamoud.jpg">
+		<div class="mypicture">
+			<img class="cover_profile" src="./RESOURCES/mamoud.jpg">
+		</div>
 		<h1>Mamoudou Diallo</h1>
 		<p>Software Engineer | Web Developer | Data Scientist</p>
 		<div style="text-align: center;">
-			<p><a class="contact_button contact_button_portfolio ">Contact me</a></p>
+			<!-- <p><a class="contact_button contact_button_portfolio ">Contact me</a></p> -->
 		</div>
-		<div class="cover_contact">
-			<p><a href="mailto:diallomamoud298@gmail">diallomamoud298@gmail</a></p>
-			<p><a href="whatsapp://send?phone=+225 07 58 50 48 22">00225 07 58 50 48 22</a></p>
+		<div class="cover_contact_container">
+			<div class="contact_me">
+				<a class="contact_button contact_button_portfolio">Contact me</a>
+			</div>
+			<div class="cover_contact">
+				<p><a href="mailto:diallomamoud298@gmail">diallomamoud298@gmail</a></p>
+				<p><a href="whatsapp://send?phone=+2250758504822">00225 07 58 50 48 22</a></p>
+			</div>
 		</div>
 	</div>
 	<!-- SECTION GRISE 1 -->
@@ -28,22 +36,57 @@
 		</div>
 		<p style="text-align: center;">I develop your web applications from A to Z</p>
 	</div>
-	<!-- SECTION BLANCHE -->
-	<div class="section">
-		<h2>learn more</h2>
-		<img src="./RESOURCES/Mamoudou.jpg"  class="col-contenu">
-		<div class="col-contenu float-right">
-			<div class="texte-avec-ligne-verticale">
-				<p>I am <strong>Mamoudou Diallo</strong>, passionate about programming from a young age, with a strong interest in Data Science and Machine Learning. Equipped with solid software development skills,
-					 I specialize in building robust and scalable solutions for various projects.
-					 My interest in data has led me to explore analytical and predictive aspects, where I enjoy solving complex problems and uncovering valuable insights. Additionally, 
-					 I am working on integrating AI solutions for businesses. My goal is to innovate, solve real-world challenges, 
-					 and help organizations stay competitive in an ever-evolving digital landscape. Let’s collaborate and discover how technology can transform the future!</p>
-					<a style="padding-left: 8px;" href="./RESOURCES/CV_MAMOUDOU_W3.pdf" target="_blank">learn more</a>
-				</p>
-			</div>
+
+	<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+	<div class="about__container container grid">
+	  <h2 class="section__title-1">
+		<span><strong>About Me.</strong></span>
+	  </h2>
+  
+	  <div class="about__perfil">
+		<div class="about__image">
+		  <img src="./RESOURCES/Mamoudou_Diallo_about-removebg-preview.png" alt="image" class="about__img">
+  
+		  <div class="about__shadow"></div>
+  
+		  <div class="geometric-box"></div>
+  
+		  <div class="about__box"></div>
 		</div>
+	  </div>
+  
+	  <div class="about__info">
+		<p class="about__description">
+			<p>I am <strong>Mamoudou Diallo</strong>, passionate about programming from a young age, with a strong interest in Data Science and Machine Learning. Equipped with solid software development skills,
+				I specialize in building robust and scalable solutions for various projects.
+				My interest in data has led me to explore analytical and predictive aspects, where I enjoy solving complex problems and uncovering valuable insights. Additionally, 
+				I am working on integrating AI solutions for businesses. My goal is to innovate, solve real-world challenges, 
+				and help organizations stay competitive in an ever-evolving digital landscape. Let’s collaborate and discover how technology can transform the future!</p>
+		   </p>
+  
+		<ul class="about__list">
+		  <li class="about__item">
+
+			<b>My Skills Are:</b> HTML, CSS, JavaScript,
+			Flask, Django, Git & GitHub, Bootstrap,
+			Figma ...
+		  </li>
+		  <a style="padding-left: 8px;" href="./RESOURCES/CV_MAMOUDOU_W3.pdf" target="_blank">learn more</a>
+		</ul>
+  
+		<div class="about__buttons">
+		  <a href="whatsapp://send?phone=+2250758504822" class="button">
+			<i class="ri-send-plane-line"></i> Contact Me
+		  </a>
+  
+		  <a href="https://www.linkedin.com/in/mamoudou-diallo-566195239/" target="_blank" class="button__ghost">
+			<i class="ri-linkedin-box-line"></i>
+		  </a>
+		</div>
+	  </div>
 	</div>
+  </section>
 	<!-- SECTION GRISE 2 -->
 	<div class="section section_grise2">
 		<h2>Portefolio</h2>
